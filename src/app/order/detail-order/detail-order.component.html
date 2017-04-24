@@ -1,0 +1,25 @@
+<div class="container">
+  <h2>Menu Yang Saya Pilih</h2>
+  <hr>
+  <form class="form-horizontal" *ngFor="let m of menu">
+    <div class="form-group">
+      <label class="control-label col-md-2" for="namaMenu">Nama Menu:</label>
+      <div class="col-md-5">
+        <input class="form-control" name="namaMenu" placeholder="Nama Menu" value="{{m.namaMenu}}" disabled>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="jenis">Jenis Menu:</label>
+      <div class="col-md-5">
+        <input class="form-control" name="jenis" placeholder="Jenis Menu" value="{{m.jenis}}" disabled>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="harga">Harga:</label>
+      <div class="col-md-5">
+        <input  class="form-control" name="harga" placeholder="Harga" value="{{m.harga}}" disabled>
+      </div>
+    </div>
+    <div class="col-sm-offset-2"><a class="btn btn-warning" routerLink="/order/view">Kembali</a></div>
+  </form>
+</div>

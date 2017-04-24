@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="col-sm-offset-2" *ngFor="let r of restaurant">
+    <img *ngIf="r.namaRestaurant == 'Mao Susu'" src="./../../assets/maosusu.jpg" class="img-rounded" alt="" width="400" height="250">
+    <img *ngIf="r.namaRestaurant == 'Hans Cafe'" src="./../../assets/hans.jpg" class="img-rounded" alt="" width="400" height="250">
+    <img *ngIf="r.namaRestaurant == 'Cafe Gaul'" src="./../../assets/cafegaul.jpg" class="img-rounded" alt="" width="400" height="250">
+    <img *ngIf="r.namaRestaurant == 'Pos Ketan'" src="./../../assets/posketan.jpg" class="img-rounded" alt="" width="400" height="250">
+
+    <h4>{{r.namaRestaurant}}</h4>
+    <h4> {{r.alamat}}</h4>
+    <h4> {{r.email}}</h4>
+    <br>
+    </div>
+
+</div>

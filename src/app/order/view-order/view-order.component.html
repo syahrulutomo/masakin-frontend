@@ -1,0 +1,48 @@
+<div class="container">
+  <h2>Daftar Order Saya</h2><hr>
+
+    <form class="form-horizontal" *ngFor="let o of order">
+      <div class="form-group" >
+        <label class="control-label col-sm-2" for="alamat">Alamat Tujuan:</label>
+        <div class="col-sm-5">
+          <textarea class="form-control" placeholder="Alamat Tujuan Order" value="{{o.alamat}}" disabled>{{o.alamat}}</textarea>
+        </div>
+      </div>
+
+      <div class="form-group" >
+        <label class="control-label col-sm-2" for="tglPesan">Tanggal Order:</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" placeholder="Tanggal Order" value="{{o.tglPesan}}" disabled>
+        </div>
+      </div>
+
+      <div class="form-group" >
+        <label class="control-label col-sm-2" for="jumlahPesan">JumlahPesan:</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" placeholder="Jumlah Order" value="{{o.jumlahPesan}}" disabled>
+        </div>
+      </div>
+
+      <div class="form-group" >
+        <label class="control-label col-sm-2" for="totalBayar">Total Bayar:</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" placeholder="Total Bayar" value="{{o.totalBayar}}" disabled>
+        </div>
+      </div>
+
+      <div class="form-group" >
+        <label class="control-label col-sm-2" for="statusBayar">Status Bayar:</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" placeholder="Status Bayar" value="{{o.statusBayar}}" disabled>
+        </div>
+      </div>
+
+      <div class="form-group" >
+        <label class="control-label col-sm-2" for="statusDelivery">Status Delivery:</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" placeholder="Status Delivery" value="{{o.statusDelivery}}" disabled>
+        </div>
+      </div>  <div class="col-sm-offset-2"><a class="btn btn-info" (click)="lakukanViewOrder(o.id)">Detail Order</a></div><hr><br>
+    </form>
+
+  </div>

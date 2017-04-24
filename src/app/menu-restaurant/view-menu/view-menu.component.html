@@ -1,0 +1,36 @@
+<div class="container">
+  <h1 align="center">Food And Bravery</h1>
+  <br><br>
+  <h4> <p><a routerLink="/menu/makanan">Lihat Menu Makanan Selengkapnya>></a>
+          <a routerLink="/menu/minuman">Lihat Menu Minuman Selengkapnya>></a>
+      </p>
+  </h4><hr>
+    <div *ngFor="let m of menu" class="col-sm-4">
+
+
+      <img *ngIf="m.namaMenu == 'Waffel Keju'" src="./../../assets/1.jpeg" class="img-rounded" alt="" width="300" height="250">
+      <img *ngIf="m.namaMenu == 'Brownies Ketan'" src="./../../assets/2.jpeg" class="img-rounded" alt="" width="300" height="250">
+      <img *ngIf="m.namaMenu == 'Es Krim Oreo Frappuchino'" src="./../../assets/ice-cream-oreo-frappuccino-waffles-60641.jpeg" class="img-rounded" alt="" width="300" height="250">
+      <img *ngIf="m.namaMenu == 'Cream Puff'" src="./../../assets/cream-puffs-delicious-france-confectionery-food-52539.jpeg" class="img-rounded" alt="" width="300" height="250">
+      <img *ngIf="m.namaMenu == 'Steak Sapi'" src="./../../assets/steak.jpg" class="img-rounded" alt="" width="300" height="250">
+      <img *ngIf="m.namaMenu == 'Hamburger'" src="./../../assets/SplitShire-04335.jpg" class="img-rounded" alt="" width="300" height="250">
+      <img *ngIf="m.namaMenu == 'Es Buah Selasih'" src="./../../assets/esbuahselasih.jpg" class="img-rounded" alt="" width="300" height="250">
+      <img *ngIf="m.namaMenu == 'Es Oyen'" src="./../../assets/es-oyen.jpg" class="img-rounded" alt="" width="300" height="250">
+      <img *ngIf="m.namaMenu == 'Es Jeruk Selasih'" src="./../../assets/4.jpg" class="img-rounded" alt="" width="300" height="250">
+      <img *ngIf="m.namaMenu == 'Jus Alpukat'" src="./../../assets/es-jus-alpukat.jpg" class="img-rounded" alt="" width="300" height="250">
+      <img *ngIf="m.namaMenu == 'Es Cendol Solo'" src="./../../assets/escendolsolo.jpg" class="img-rounded" alt="" width="300" height="250">
+      <img *ngIf="m.namaMenu == 'Es Lemon Tea'" src="./../../assets/lemontea.jpg" class="img-rounded" alt="" width="300" height="250">
+      <img *ngIf="m.namaMenu == 'Banana Fusion'" src="./../../assets/food-restaurant-fruits-orange.jpg" class="img-rounded" alt="" width="300" height="250">
+      <img *ngIf="m.namaMenu == 'Choco Grizzle'" src="./../../assets/pexels-photo-209353.jpeg" class="img-rounded" alt="" width="300" height="250">
+
+      <h4>{{m.namaMenu}} - {{m.harga}}</h4>
+
+      <p *ngIf="m.namaMenu == 'Es Buah Selasih' || m.namaMenu == 'Brownies Ketan' || m.namaMenu == 'Steak Sapi' || m.namaMenu == 'Jus Alpukat'">By Cafe Gaul</p>
+      <p *ngIf="m.namaMenu == 'Es Oyen' || m.namaMenu == 'Es Jeruk Selasih' || m.namaMenu == 'Es Krim Oreo Frappuchino' || m.namaMenu == 'Waffel Keju'">By Mao Susu</p>
+      <p *ngIf="m.namaMenu == 'Es Lemon Tea' || m.namaMenu == 'Cream Puff' || m.namaMenu == 'Hamburger' || m.namaMenu == 'Es Cendol Solo'">By Hans Cafe</p>
+      <p *ngIf="m.namaMenu == 'Banana Fusion' || m.namaMenu == 'Choco Grizzle' ">By Pos Ketan</p>
+
+      <a routerLink="/menu/order" href="" class="btn btn-primary" (click)="lakukanOrder(m.id)">Beli</a>
+    </div>
+
+</div>

@@ -1,0 +1,12 @@
+export class Menu{
+
+  constructor(
+        public id: string,
+        public namaMenu: string,
+        public jenis: string,
+        public harga: string,
+        public foto: string,
+        public idRestaurant: string){
+
+   }
+}

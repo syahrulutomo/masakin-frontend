@@ -1,0 +1,38 @@
+<div class="container">
+  <h2>PROFIL</h2>
+  <br>{{debugForm}}
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label class="control-label col-md-2" for="fullName">Nama Restaurant:</label>
+      <div class="col-md-5">
+        <input [(ngModel)]="restaurant.namaRestaurant"  class="form-control" name="namaRestaurant" placeholder="Nama Restaurant">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="password">Password:</label>
+      <div class="col-md-5">
+        <input [(ngModel)]="restaurant.password"  class="form-control" name="password" placeholder="Password">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="dob">Alamat:</label>
+      <div class="col-md-5">
+        <input [(ngModel)]="restaurant.alamat" type="date" class="form-control" name="alamat" placeholder="ALamat">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="email">Email:</label>
+      <div class="col-md-5">
+        <input [(ngModel)]="restaurant.email" type="email" class="form-control" name="email" placeholder="Email">
+      </div></div>
+      <div class="form-group">
+        <label class="control-label col-md-2" for="phone">Nomor Rekening:</label>
+        <div class="col-md-5">
+          <input [(ngModel)]="restaurant.nomorRekeningBank"  class="form-control" name="nomorRekeningBank" placeholder="Nomor Rekening">
+        </div>
+      </div>
+      <div class="col-md-offset-2">
+      <button class="btn btn-primary btn-lg" (click)="lakukanUbah()">Ubah</button>
+    </div>
+    </form>
+  </div>

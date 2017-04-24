@@ -1,0 +1,19 @@
+<!--
+    you can substitue the span of reauth email for a input with the email and
+    include the remember me checkbox
+    -->
+    <div class="container">
+        <div class="card card-container">
+            <img id="profile-img" class="profile-img-card" src="./../../assets/person-icon.png" />
+            <p id="profile-name" class="profile-name-card"></p>
+            <form class="form-signin">
+                <span id="reauth-email" class="reauth-email"></span>
+                <input type="text" class="form-control" name="loginEmail" [(ngModel)]="loginEmail" placeholder="Email" >
+                <input type="password" class="form-control" name="loginPassword" [(ngModel)]="loginPassword" placeholder="Password" required>
+                <a class="btn btn-lg btn-primary btn-block btn-signin" (click)="login()">Sign in</a>
+            </form><!-- /form -->
+            <a routerLink="/user/register" class="forgot-password">
+                Belum punya akun?
+            </a>
+        </div><!-- /card-container -->
+    </div><!-- /container -->

@@ -1,0 +1,68 @@
+<div class="container">
+  <h2>Menu Yang Saya Pilih</h2>
+  <br>
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label class="control-label col-md-2" for="namaMenu">Nama Menu:</label>
+      <div class="col-md-5">
+        <input [(ngModel)]="menu.namaMenu"  class="form-control" name="namaMenu" placeholder="Nama Menu">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="jenis">Jenis Menu:</label>
+      <div class="col-md-5">
+        <input [(ngModel)]="menu.jenis" class="form-control" name="jenis" placeholder="Jenis Menu">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="harga">Harga:</label>
+      <div class="col-md-5">
+        <input [(ngModel)]="menu.harga"  class="form-control" name="harga" placeholder="Password">
+      </div>
+    </div>
+  </form><hr>
+
+  <h2>Detail Order Saya</h2>
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label class="control-label col-md-2" for="namaMenu">Alamat Tujuan:</label>
+        <div class="col-md-5">
+          <input [(ngModel)]="order.alamat"  class="form-control" name="alamat" placeholder="Alamat Lengkap">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-md-2" for="namaMenu">Tgl Order:</label>
+        <div class="col-md-5">
+          <input [(ngModel)]="order.tglPesan" type=date  class="form-control" name="tglPesan">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-md-2" for="namaMenu">Jumlah Order:</label>
+        <div class="col-md-5">
+          <input [(ngModel)]="order.jumlahPesan"  class="form-control" name="jumlahPesan" placeholder="Jumlah Order">
+        </div>
+      </div>
+      <div class="form-group" hidden>
+        <label class="control-label col-md-2" for="namaMenu">Total Bayar:</label>
+        <div class="col-md-5">
+          <input [(ngModel)]="order.totalBayar"  class="form-control" name="totalBayar" placeholder="Total Bayar" disabled>
+        </div>
+      </div>
+      <div class="form-group" hidden>
+        <label class="control-label col-md-2" for="jenis">Status Bayar:</label>
+        <div class="col-md-5">
+          <input [(ngModel)]="order.statusBayar" class="form-control" name="statusBayar" placeholder="Status Bayar" value="Belum Bayar">
+        </div>
+      </div>
+      <div class="form-group" hidden>
+        <label class="control-label col-md-2" for="harga">Status Delivery:</label>
+        <div class="col-md-5">
+          <input [(ngModel)]="order.statusDelivery"  class="form-control" name="statusDelivery" placeholder="Status Delivery" value="Belum Terkirim">
+        </div>
+      </div>
+      <div class="col-md-offset-2">
+        <button class="btn btn-primary btn-lg" (click)="lakukanOrder()">Order</button>
+      </div>
+      </form>
+      <br><br>
+  </div>

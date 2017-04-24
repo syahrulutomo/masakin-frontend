@@ -1,0 +1,108 @@
+<div *ngIf="!auth.sudahLogin()" class="container">
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img class="first-slide" src="../assets/kitchen-731351_1920.jpg" alt="First slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Segera Order Menu Favoritmu!!!</h1>
+          <p>Di masakin.com tersedia banyak menu lezat dengan harga terjangkau. Ayo segera buat akunmu di masakin.com</p>
+          <a class="btn btn-lg btn-primary" routerLink="/user/register">Daftar sekarang</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /.carousel -->
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="./../assets/zxjbvgi0rnirrl2a9nru.png" alt="Generic placeholder image" width="160" height="160">
+          <h2>Terpercaya</h2>
+          <p>Kami menjamin transaksi yang anda lakukan aman dan terpercaya. Seluruh Patner kami merupakan Resto terpercaya</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="./../assets/acceptation-1295324_1280.png" alt="Generic placeholder image" width="160" height="160">
+          <h2>Profesional</h2>
+          <p>Kami menjamin kepuasan anda dalam bertansaksi. Kami selalu memberikan 100% kemmapuan kami</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="./../assets/240_F_112269434_HFa6Vvqu1nApzvRW5wA2O70pusH8dd5l.jpg" alt="Generic placeholder image" width="160" height="160">
+          <h2>Mudah Digunakan</h2>
+          <p>Kami menyediakan antarmuka yang mudah dan intuitif dioperasikan bahkan untuk orang awam.</p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Masakin.com merupakan mitra yang<span class="text-muted"> professional</span></h2>
+          <p class="lead">
+            Semenjak menggunakan Masakin.com, omset kami meningkat dan kami banyak menerima order dari luar kota. Terima kasih masakin.com!
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="./../assets/hans.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Bermitra dengan Masakin.com merupakan<span class="text-muted">keputusan brilian</span></h2>
+          <p class="lead">
+            Masakin.com merupakan mitra kerja yang profesional dan terpercaya. Merupakan kebanggaan untuk bermitra dengan Masakin.com
+          </p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="./../assets/cafegaul.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Masakin.com membuat transaksi dengan pelanggan menjadi <span class="text-muted">Mudah dan Aman</span></h2>
+          <p class="lead">
+            Tampilan Masakin.com mudah untuk dimengerti dan alur pengoperasiannya juga mudah. Transaksi dengan pelanggan juga menjadi aman dan mudah. 
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="./../assets/maosusu.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+    </div>
+  </div>
+
+  <div id="banner" *ngIf="auth.sudahLogin()" class="container">
+  <div  class="jumbotron">
+    <h1>Selamat Datang di Masakin.com</h1>
+    <p>Anda telah sukses melakukan login. Ayo segera order menu favorit anda!</p>
+  </div>
+  </div>
+
+      <!-- /END THE FEATURETTES -->
+      <!-- FOOTER -->
+      <footer *ngIf="!auth.sudahLogin()">
+        <!-- <a class="pull-right" routerLink="/restaurant/login">Daftarkan Restaurantmu</a> -->
+        &copy; 2017 SyahrulUtomo
+      </footer>

@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+.navbar-brand{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+}
+
+a{
+  font-size: 20;
+  font-family: 'Merriweather', serif;
+}
+
+img{
+  margin:  0 0 0 0;
+}

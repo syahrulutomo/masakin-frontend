@@ -1,0 +1,38 @@
+<div class="container">
+<h2>REGISTRASI RESTAURANT</h2><br>
+  <form class="form-horizontal">
+  <div class="form-group">
+    <label class="control-label col-md-2" for="namaRestaurant">Nama Restaurant:</label>
+    <div class="col-md-5">
+    <input [(ngModel)]="restaurant.namaRestaurant"  class="form-control" name="namaRestaurant" placeholder="Nama Restaurant">
+  </div>
+</div>
+  <div class="form-group">
+    <label class="control-label col-md-2" for="alamat">Alamat:</label>
+      <div class="col-md-5">
+    <input [(ngModel)]="restaurant.alamat" class="form-control" name="alamat" placeholder="Alamat Restaurant">
+  </div>
+</div>
+  <div class="form-group">
+    <label class="control-label col-md-2" for="password">Password:</label>
+    <div class="col-md-5">
+    <input [(ngModel)]="restaurant.password"  class="form-control" name="password" placeholder="Password">
+  </div>
+</div>
+  <div class="form-group">
+    <label class="control-label col-md-2" for="email">Email:</label>
+    <div class="col-md-5">
+    <input [(ngModel)]="restaurant.email" type="email" class="form-control" name="email" placeholder="Email">
+  </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-md-2" for="phone">Nomor Rekening:</label>
+    <div class="col-md-5">
+    <input [(ngModel)]="restaurant.nomorRekeningBank"  class="form-control" name="nomorRekeningBank" placeholder="Nomor Rekening Bank">
+  </div>
+</div>
+<div class="col-md-offset-2">
+  <button class="btn btn-primary btn-lg" (click)="lakukanRegisterRestaurant()">Daftar</button>
+</div>
+</form>
+</div>
